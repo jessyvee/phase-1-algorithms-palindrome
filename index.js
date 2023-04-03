@@ -1,7 +1,15 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  let vocabulary = word.split("").reverse().join("").toLowerCase();
 
+  if ( vocabulary === word )return true;
+  
+ return false;
+};
+
+
+isPalindrome('a', 'abba', 'racecar', 'robot', 'ab');
+console.log('isPalindrome')
 /* 
   Add your pseudocode here
 */
